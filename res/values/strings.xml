@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Kharcha_pani_appActivity!</string>
+    <string name="app_name">Kharcha_pani_app</string>
+    <string name="titleText">Kharcha - Pani</string>
+    <string name="addKharcha">Add Expense</string>
+    <string name="addIncome">Add Income</string>
+    <string name="totalExpense">Total Expense</string>
+
+</resources>

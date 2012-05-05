@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="6dp"
+        android:layout_x="63dp"
+        android:layout_y="4dp"
+        android:text="@string/titleText"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayoutTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" >
+
+        <Button
+            android:id="@+id/addIncome"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/expenses"
+            android:layout_marginBottom="24dp"
+            android:text="@string/addIncome" />
+
+        <Button
+            android:id="@+id/addKharcha"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/addIncome"
+            android:layout_alignBottom="@+id/addIncome"
+            android:layout_toRightOf="@+id/addIncome"
+            android:text="@string/addKharcha" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="316dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonLayoutTop" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:text="@string/totalExpense" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
